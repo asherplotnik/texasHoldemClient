@@ -1,0 +1,16 @@
+.JoinGame {
+	width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.JoinGame .GameClass {
+ background-color: darkmagenta;   
+ padding: 1rem;
+}
+.JoinGame .CreateClass {
+ background-color: rgb(90, 228, 27);   
+ color:black;
+ padding: 1rem;
+}

@@ -1,0 +1,28 @@
+.Layout {
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 9% auto 4%;
+    grid-template-columns: repeat(8, 1fr);
+  }
+  
+  .Layout > header,
+  .Layout > footer {
+    grid-column: span 8;
+  }
+  
+  .Layout > main {
+    grid-column: span 8;
+  }
+  
+  .Layout,
+  .Layout > * {
+  }
+  
+  @media (max-width: 500px) {
+    .Layout {
+      grid-template-rows: 15% auto 4%;
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+  

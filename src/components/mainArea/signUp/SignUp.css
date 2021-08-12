@@ -1,0 +1,12 @@
+
+.SignUp .SignUpFormDiv {
+    width:50%;
+    margin: auto;
+    background-color: green;
+    border-radius:10rem;
+    padding: 1%;
+}
+
+.SignUp .TextfieldClass {
+    width: 80%;
+}

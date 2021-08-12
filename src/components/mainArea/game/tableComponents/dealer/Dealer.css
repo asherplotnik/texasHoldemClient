@@ -1,0 +1,13 @@
+.Dealer {
+display: flex;
+width: 3rem;
+height: 3rem;
+border-radius: 50% ;
+border: solid 1px white;
+background-color: white;
+color: darkgreen;
+align-items: center;
+text-align: center;
+justify-content: center;
+font-weight: bold;
+}

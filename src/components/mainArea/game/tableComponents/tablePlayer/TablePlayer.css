@@ -1,0 +1,19 @@
+
+.TablePlayer{
+  
+}
+.TablePlayer .CardClass {
+    width: 3vw;
+    margin: 0.5rem;
+}
+
+.TablePlayer img {
+    margin-top: 3px;
+    max-width: 100%;
+}
+
+.TablePlayer .CardsDiv {
+    display: flex;
+    justify-content: center;
+}
+

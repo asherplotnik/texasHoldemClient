@@ -1,0 +1,281 @@
+.Game {
+	width: 100%;
+    height: 85vh;
+    display: grid;
+    grid-template-rows: 20% 25% 25% 20%;
+    grid-template-columns: repeat(9, 1fr); 
+}
+
+
+.Game .Turn {
+    background-color: slateblue;
+
+}
+.Game .PotDiv {
+    margin:auto;
+    background-color: white;
+    color:black;
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 0;
+    grid-row-end: 1;
+}
+.Game .Table {
+    grid-column-start: 3;
+    grid-column-end:8;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: green;
+    border-radius:16rem;
+    padding: 1%;
+    display: grid;
+    grid-template-rows: 20% 30% 30% 20%;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.Game .Position1 {
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* border: 1px solid black;  */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .Position2 {
+    grid-column-start: 4;
+    grid-column-end:5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .Position3 {
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+    align-items: center;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.Game .Position4 {
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+    display: grid;
+    align-items: center;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: repeat(3, 1fr); 
+}
+
+.Game .Position5 {
+    grid-column-start: 4;
+    grid-column-end:5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    margin:5px;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Game .Position6 {
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: repeat(3, 1fr);
+}
+.Game .Position7 {
+    grid-column-start: 6;
+    grid-column-end:7;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: repeat(3, 1fr);
+}
+.PositionDown{
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.Game .Position8 {
+    grid-column-start: 8;
+    grid-column-end:9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.Game .Position9 {
+    grid-column-start: 8;
+    grid-column-end:9;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3% ;
+    grid-template-columns: repeat(3, 1fr); 
+}
+.PositionUpRight{
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.PositionDownRight{
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.PositionUpLeft{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.PositionDownLeft{
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.Game .Position10 {
+    grid-column-start: 6;
+    grid-column-end:7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+
+.Game .TablePosition1 {
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition2 {
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition3 {
+    
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition4 {
+   
+    grid-column-start: 1;
+    grid-column-end:2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition5 {
+    grid-column-start: 2;
+    grid-column-end:3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition6 {
+    grid-column-start: 3;
+    grid-column-end:4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition7 {
+    grid-column-start: 4;
+    grid-column-end:5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition8 {
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition9 {
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+.Game .TablePosition10 {
+    grid-column-start: 4;
+    grid-column-end:5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    margin:5px;
+}
+
+.Play {
+    grid-column-start: 5;
+    grid-column-end:6;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    margin: auto;
+}

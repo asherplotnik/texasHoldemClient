@@ -1,0 +1,3 @@
+export enum PlayEnum {
+    BET="BET",CHECK="CHECK",CALL="CALL",RAISE="RAISE",FOLD="FOLD",WAITING="WAITING"
+}

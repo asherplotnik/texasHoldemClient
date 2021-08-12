@@ -1,0 +1,29 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: darkgreen;
+  color:lightgray;
+
+}
+
+a {
+  color: blue;
+}
+
+Button {
+  margin: 5px !important;
+}
+
+.Box {
+  display: inline-block;
+  text-align: left;
+  border: 1px solid transparent;
+  padding: 0 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px;
+}

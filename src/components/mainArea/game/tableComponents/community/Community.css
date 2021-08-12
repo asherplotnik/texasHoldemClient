@@ -1,0 +1,25 @@
+.Community {
+	display: flex;
+    flex-direction: row;
+    padding:5px;
+    justify-content:center;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.Community .CardClass {
+    border: 1px solid lightgray;
+    border-radius: 0.3rem;
+    width: 12vw;
+    margin: 1rem;
+}
+
+.Community img {
+    margin-top: 3px;
+    max-width: 100%;
+}
