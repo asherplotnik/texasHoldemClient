@@ -20,6 +20,8 @@ export class AuthState {
 export enum AuthActionType {
     Login="Login",
     Logout="Logout",
+    JoinGame="JoinGame",
+    LeaveGame="LeaveGame",
     UpdateWallet="UpdateWallet" 
 }
 
@@ -47,6 +49,14 @@ export  const updateAuthAction = (wallet: number): AuthAction => {
     return { type: AuthActionType.UpdateWallet, payload: wallet };
 }
 
+export  const joinAction = (currentGame: string): AuthAction => {
+    return { type: AuthActionType.JoinGame, payload: currentGame };
+}
+
+export  const leaveAction = (): AuthAction => {
+    return { type: AuthActionType.LeaveGame };
+}
+
 // ----------------------------------------------------------------------------------
 
 // Products Reducer - פונקציה המבצעת את הפעולה בפועל
@@ -67,6 +77,14 @@ export const AuthReducer = (currentState: AuthState = new AuthState(), action: A
             break;
         case AuthActionType.UpdateWallet:
             newState.auth.wallet = action.payload;
+            localStorage.setItem("auth", JSON.stringify(newState.auth));
+            break;
+        case AuthActionType.JoinGame:
+            newState.auth.currentGame = action.payload;
+            localStorage.setItem("auth", JSON.stringify(newState.auth));
+            break;
+        case AuthActionType.LeaveGame:
+            newState.auth.currentGame = null;
             localStorage.setItem("auth", JSON.stringify(newState.auth));
             break;
     }

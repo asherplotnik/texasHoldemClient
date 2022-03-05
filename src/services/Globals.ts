@@ -12,7 +12,7 @@ class DevelopmentGlobals extends Globals {
 // Global settings which are suitable only for production:
 class ProductionGlobals extends Globals {
     public urls = {
-        localUrl : "http://localhost:8080/"
+        localUrl : "https://buddy-holdem.herokuapp.com/"
     };
 }
 
