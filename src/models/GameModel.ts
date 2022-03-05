@@ -13,7 +13,7 @@ class GameModel {
 	public players : PlayerModel[];
 	public activePlayers : number[];
 	public flop : CardEnum[];
-	public playerturn : number;
+	public playerTurn : number;
 	public dealer : number;
 	public lastPlay : PlayEnum;
 	public lastRaised : number;

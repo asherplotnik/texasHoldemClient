@@ -35,7 +35,7 @@ function Game(): JSX.Element {
         (player) => player.id === store.getState().AuthState.auth.id
       );
       const playerTurn = game?.players?.find(
-        (player) => player.id === game?.activePlayers[game?.playerturn]
+        (player) => player.id === game?.activePlayers[game?.playerTurn]
       )?.id;
       if (
         player.id !== playerTurn ||
@@ -126,7 +126,7 @@ function Game(): JSX.Element {
     return arr;
   };
   const checkTurn = (player: PlayerModel): string => {
-    if (player?.id === gameState?.activePlayers[gameState?.playerturn])
+    if (player?.id === gameState?.activePlayers[gameState?.playerTurn])
       return " Turn";
     return "";
   };
